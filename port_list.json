@@ -1,0 +1,41 @@
+{
+    "ports": {
+      "0": "Reserved",
+      "20": "FTP Data Transfer",
+      "21": "FTP Control",
+      "22": "SSH",
+      "23": "Telnet",
+      "25": "SMTP",
+      "53": "DNS",
+      "67": "DHCP Server",
+      "68": "DHCP Client",
+      "69": "TFTP",
+      "80": "HTTP",
+      "110": "POP3",
+      "119": "NNTP",
+      "123": "NTP",
+      "143": "IMAP",
+      "161": "SNMP",
+      "194": "IRC",
+      
+      "465": "SMTP over SSL",
+      "514": "Syslog",
+      "587": "SMTP Message Submission",
+      "993": "IMAP over SSL",
+      "995": "POP3 over SSL",
+      "1080": "SOCKS Proxy",
+      "1433": "Microsoft SQL Server",
+      "1521": "Oracle Database",
+      "2049": "NFS",
+      "3306": "MySQL",
+      "3389": "Remote Desktop Protocol (RDP)",
+      "5432": "PostgreSQL",
+      "5900": "VNC",
+      "6379": "Redis",
+      "8080": "HTTP Proxy/Alternative HTTP",
+      "8443": "HTTPS Proxy/Alternative HTTPS",
+      "9200": "Elasticsearch",
+      "27017": "MongoDB"
+    }
+  }
+  
