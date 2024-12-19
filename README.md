@@ -1,19 +1,19 @@
 
 # Port Scanner
 
-Bu proje, bir IP adresindeki portların açık olup olmadığını kontrol etmek için GuzzleHttp ve fsockopen yöntemlerini kullanan bir PHP uygulamasıdır.
+This project is a PHP application that uses GuzzleHttp and fsockopen methods to check whether ports on an IP address are open.
 
-## Kurulum
+## Installation
 
-1. **Composer ile bağımlılıkları yükleyin:**
+1. **Install dependencies with Composer:**
 
    ```bash
    composer require guzzlehttp/guzzle
    ```
 
-2. **Gerekli dosyaları kontrol edin:**
+2. **Ensure the required files are available:**
 
-   - `port_list.json`: Port bilgilerini içeren JSON dosyası. Örnek format:
+   - `port_list.json`: A JSON file containing port information. Example format:
      ```json
      {
        "ports": {
@@ -24,9 +24,10 @@ Bu proje, bir IP adresindeki portların açık olup olmadığını kontrol etmek
      }
      ```
 
-3. **Dosya yapısı:**
-
-   ```
+3. **Directory structure:**
+   
+```
+   
    network_scan/
    ├── composer.json
    ├── composer.lock
@@ -34,38 +35,36 @@ Bu proje, bir IP adresindeki portların açık olup olmadığını kontrol etmek
    ├── port_list.json
    ├── start.php
    └── vendor/
-   ```
+  
+ ```
+## Usage
 
-## Kullanım
-
-1. Terminalde şu komutu çalıştırın:
+1. Run the following command in the terminal:
 
    ```bash
    php start.php
    ```
 
-2. Program sizden bir IP adresi girmenizi isteyecektir. Örneğin:
+2. The program will ask you to enter an IP address. For example:
    ```
-   Lütfen IP adresi girin: 192.168.1.1
-   ```
-
-3. Daha sonra portları kontrol eder ve açık olan portları bir dosyaya yazar.
-
-4. Program ayrıca dosya ismi girmenizi isteyecek. Örneğin:
-   ```
-   dosya ismini giriniz: output.txt
+   Please enter an IP address: 192.168.1.1
    ```
 
-5. Sonuçlar `output.txt` dosyasına yazılacaktır.
+3. It will then scan the ports and write the open ports to a file.
 
+4. The program will also prompt you to enter a filename. For example:
+   ```
+   Enter the filename: output.txt
+   ```
 
+5. The results will be saved to the `output.txt` file.
 
-## Gereksinimler
+## Requirements
 
 - PHP >= 7.4
 - Composer
-- GuzzleHttp kütüphanesi
+- GuzzleHttp library
 
-## Lisans
+## License
 
-Bu proje [MIT Lisansı](LICENSE) ile lisanslanmıştır.
+This project is licensed under the [MIT License](LICENSE).
